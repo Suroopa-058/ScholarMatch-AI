@@ -1,0 +1,57 @@
+{
+  "sbert_model": "all-MiniLM-L6-v2",
+  "sbert_embedding_dim": 384,
+  "feature_columns": [
+    "gpa",
+    "extracurricular_point",
+    "total_credits",
+    "has_failed_course",
+    "student_year",
+    "semester",
+    "class_encoded",
+    "academic_weight",
+    "extracurricular_weight",
+    "major_match",
+    "semantic_similarity"
+  ],
+  "ensemble": {
+    "type": "soft_voting",
+    "xgboost_weight": 0.25,
+    "random_forest_weight": 0.25,
+    "lightgbm_weight": 0.25,
+    "catboost_weight": 0.25,
+    "decision_threshold": 0.50
+  },
+  "num_scholarships": 10,
+  "top_k": 5,
+  "train_test_split": {
+    "method": "student_level_split",
+    "test_size": 0.30,
+    "random_state": 42
+  },
+  "eligibility_rules": {
+    "min_gpa": 7,
+    "min_total_credits": 14,
+    "max_student_year": 4,
+    "has_failed_course_must_be": false
+  },
+  "reported_notebook_metrics": {
+    "note": "Values as printed by the original notebook's CELL 16 (four-model ensemble) and CELL 17 (ranking evaluation). This backend's retraining run reproduces these within small numeric tolerance (see metrics_report.json) due to library-version differences between the original Colab environment and this environment.",
+    "accuracy": 0.8773,
+    "balanced_accuracy": 0.8909,
+    "precision": 0.6314,
+    "recall": 0.9134,
+    "f1": 0.7466,
+    "roc_auc": 0.9217,
+    "average_precision": 0.7571,
+    "precision_at_1": 0.2415,
+    "precision_at_3": 0.2288,
+    "precision_at_5": 0.2241,
+    "recall_at_1": 0.0563,
+    "recall_at_3": 0.1541,
+    "recall_at_5": 0.2521,
+    "ndcg_at_1": 0.2415,
+    "ndcg_at_3": 0.2505,
+    "ndcg_at_5": 0.2671
+  }
+}

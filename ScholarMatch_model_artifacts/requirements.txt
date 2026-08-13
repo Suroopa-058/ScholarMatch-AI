@@ -1,0 +1,33 @@
+# The original Colab notebook does not pin package versions anywhere
+# (no pip freeze / version print cells were present), so exact original
+# training-environment versions could not be extracted from the notebook.
+#
+# The versions below are the ones actually used to RE-TRAIN and
+# VALIDATE these exported artifacts end-to-end (models load, predict,
+# and reproduce the notebook's reported metrics within a small
+# tolerance). Pin these for reproducible loading of the shipped model
+# files.
+
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+
+numpy==2.4.4
+pandas==3.0.2
+scikit-learn==1.8.0
+xgboost==3.4.0
+lightgbm==4.7.0
+catboost==1.2.10
+joblib==1.5.3
+shap==0.52.0
+
+sentence-transformers==5.7.0
+torch==2.13.0
+
+# NOTE: sentence-transformers + torch are required only for computing
+# semantic_similarity for NEW students (the 10 scholarship texts could
+# be pre-embedded, but a new student's profile text must always be
+# embedded at request time). The very first time SentenceTransformer(
+# "all-MiniLM-L6-v2") is instantiated, it downloads weights from
+# Hugging Face Hub — the backend host needs outbound network access to
+# huggingface.co, or a pre-populated local HF cache / offline mirror.

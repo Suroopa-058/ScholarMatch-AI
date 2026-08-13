@@ -1,0 +1,8 @@
+.env
+__pycache__/
+.pytest_cache/
+*.py[cod]
+models/**/*.joblib
+models/**/*.npy
+models/ensemble_weights.json
+data/*.db

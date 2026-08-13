@@ -1,0 +1,1 @@
+"""ScholarMatch AI FastAPI application."""

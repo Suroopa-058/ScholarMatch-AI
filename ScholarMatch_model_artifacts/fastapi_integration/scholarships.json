@@ -1,0 +1,82 @@
+[
+  {
+    "scholarship_id":"SCH001",
+    "name":"Academic Excellence Scholarship",
+    "description":"Supports students with strong academic performance, consistent grades, good academic progress, and strong overall educational achievement.",
+    "preferred_majors":"ALL",
+    "academic_weight":0.75,
+    "extracurricular_weight":0.25
+  },
+  {
+    "scholarship_id":"SCH002",
+    "name":"Extracurricular Achievement Scholarship",
+    "description":"Supports students who demonstrate strong participation in extracurricular activities, leadership, student clubs, competitions, volunteering, and other activities outside the classroom.",
+    "preferred_majors":"ALL",
+    "academic_weight":0.35,
+    "extracurricular_weight":0.65
+  },
+  {
+    "scholarship_id":"SCH003",
+    "name":"Technology and Computing Scholarship",
+    "description":"Supports students pursuing computing, software engineering, information systems, data science, information technology, and other technology-related academic fields.",
+    "preferred_majors":"CS,IS,SE,DS,IT",
+    "academic_weight":0.7,
+    "extracurricular_weight":0.3
+  },
+  {
+    "scholarship_id":"SCH004",
+    "name":"Merit Scholarship",
+    "description":"For students demonstrating a combination of strong academic performance, extracurricular involvement, academic progress, and consistent semester achievement.",
+    "preferred_majors":"ALL",
+    "academic_weight":0.6,
+    "extracurricular_weight":0.4
+  },
+  {
+    "scholarship_id":"SCH005",
+    "name":"Student Achievement Scholarship",
+    "description":"Recognizes students who maintain good academic standing, complete their academic credits successfully, and demonstrate continued progress toward graduation.",
+    "preferred_majors":"ALL",
+    "academic_weight":0.65,
+    "extracurricular_weight":0.35
+  },
+  {
+    "scholarship_id":"SCH006",
+    "name":"Leadership and Community Scholarship",
+    "description":"Supports students who demonstrate leadership, community participation, volunteering, teamwork, and meaningful extracurricular contributions.",
+    "preferred_majors":"ALL",
+    "academic_weight":0.3,
+    "extracurricular_weight":0.7
+  },
+  {
+    "scholarship_id":"SCH007",
+    "name":"STEM Excellence Scholarship",
+    "description":"Supports students studying science, technology, engineering, mathematics, computing, and related technical disciplines who demonstrate strong academic achievement.",
+    "preferred_majors":"CS,SE,DS,IT,NS",
+    "academic_weight":0.8,
+    "extracurricular_weight":0.2
+  },
+  {
+    "scholarship_id":"SCH008",
+    "name":"Academic Progress Scholarship",
+    "description":"Supports students who maintain satisfactory academic progress, successfully complete their coursework, and consistently work toward their educational goals.",
+    "preferred_majors":"ALL",
+    "academic_weight":0.7,
+    "extracurricular_weight":0.3
+  },
+  {
+    "scholarship_id":"SCH009",
+    "name":"Future Innovator Scholarship",
+    "description":"Supports students interested in innovation, technology, problem solving, research, new ideas, and developing solutions that can create positive impact.",
+    "preferred_majors":"CS,IS,SE,DS,IT",
+    "academic_weight":0.55,
+    "extracurricular_weight":0.45
+  },
+  {
+    "scholarship_id":"SCH010",
+    "name":"All-Round Achievement Scholarship",
+    "description":"Recognizes students with balanced academic achievement, extracurricular participation, successful coursework, and consistent overall student performance.",
+    "preferred_majors":"ALL",
+    "academic_weight":0.5,
+    "extracurricular_weight":0.5
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "feature_columns": [
+    "gpa",
+    "extracurricular_point",
+    "total_credits",
+    "has_failed_course",
+    "student_year",
+    "semester",
+    "class_encoded",
+    "academic_weight",
+    "extracurricular_weight",
+    "major_match",
+    "semantic_similarity"
+  ],
+  "note": "This exact order was used to build X_train/X_test in the notebook (CELL 11). The backend MUST assemble feature vectors in this exact order before calling any model."
+}

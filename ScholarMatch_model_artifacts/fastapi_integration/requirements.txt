@@ -1,0 +1,31 @@
+# The original Colab notebook does not pin package versions anywhere
+# (no pip freeze / version print cells were present), so exact original
+# training-environment versions could not be extracted from the notebook.
+#
+# The versions below are the ones actually used to RE-TRAIN and
+# VALIDATE these exported artifacts end-to-end (models load, predict,
+# and reproduce the notebook's reported metrics within a small
+# tolerance). Pin these for reproducible loading of the shipped model
+# files.
+
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+
+numpy==2.4.4
+pandas==3.0.2
+scikit-learn==1.8.0
+xgboost==3.4.0
+lightgbm==4.7.0
+catboost==1.2.10
+joblib==1.5.3
+shap==0.52.0
+
+sentence-transformers==5.7.0
+torch==2.13.0
+
+# NOTE: A verified local copy of "all-MiniLM-L6-v2" ships in
+# fastapi_integration/local_models/all-MiniLM-L6-v2/, so no Hugging
+# Face Hub network access is required at runtime. sentence-transformers
+# + torch are still required as Python dependencies to load and run
+# that local model (and to embed new student profiles at request time).
